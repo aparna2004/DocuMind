@@ -1,7 +1,7 @@
 
-# Local PDF Chat Application with Mistral 7B LLM, Langchain, Ollama, and Streamlit
+# DocuMind
 
-A PDF chatbot is a chatbot that can answer questions about a PDF file. It can do this by using a large language model (LLM) to understand the user's query and then searching the PDF file for the relevant information. The application uses the concept of Retrieval-Augmented Generation (RAG) to generate responses in the context of a particular document. RAG applications augment their generation capabilities by retrieving relevant information from an external knowledge base. This allows RAG applications to produce more informative and comprehensive responses to a wider range of prompts and questions.
+DocuMind is a chatbot that can answer questions about a PDF file. It can do this by using a large language model (LLM) to understand the user's query and then searching the PDF file for the relevant information. The application uses the concept of Retrieval-Augmented Generation (RAG) to generate responses in the context of a particular document. RAG applications augment their generation capabilities by retrieving relevant information from an external knowledge base. This allows RAG applications to produce more informative and comprehensive responses to a wider range of prompts and questions.
 
 ## Setup and usage
 1. install Ollama and run mistral
