@@ -12,11 +12,11 @@ import streamlit as st
 import os
 import time
 
-if not os.path.exists('files'):
-    os.mkdir('files')
+if not os.path.exists('Files'):
+    os.mkdir('Files')
 
-if not os.path.exists('jj'):
-    os.mkdir('jj')
+if not os.path.exists('Database'):
+    os.mkdir('Database')
 
 if 'template' not in st.session_state:
     st.session_state.template = """You are a knowledgeable chatbot, here to help with questions of the user. Your tone should be professional and informative.
@@ -37,7 +37,7 @@ if 'memory' not in st.session_state:
         return_messages=True,
         input_key="question")
 if 'vectorstore' not in st.session_state:
-    st.session_state.vectorstore = Chroma(persist_directory='jj',
+    st.session_state.vectorstore = Chroma(persist_directory='Database',
                                           embedding_function=OllamaEmbeddings(base_url='http://localhost:11434',
                                                                               model="mistral")
                                           )
@@ -53,7 +53,7 @@ if 'llm' not in st.session_state:
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 
-st.title("Education Assistant")
+st.title("Documind")
 
 # Upload a PDF file
 uploaded_file = st.file_uploader("Upload your PDF", type='pdf')
