@@ -10,7 +10,7 @@ https://ollama.com/
 2. Clone this repository:
    
  ```
- git clone [https://github.com/aparna2004/DocuMind](https://github.com/aparna2004/DocuMind)
+ git clone https://github.com/aparna2004/DocuMind
  ```
 3. Install all the depenedencies :
    
