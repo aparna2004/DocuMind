@@ -15,6 +15,11 @@ import time
 if not os.path.exists('Files'):
     os.mkdir('Files')
 
+try:
+    os.mkdir('Files')
+except FileExistsError:
+    pass
+
 if not os.path.exists('Database'):
     os.mkdir('Database')
 
