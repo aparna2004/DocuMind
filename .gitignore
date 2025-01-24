@@ -1,3 +1,5 @@
 venv/
 Database/
 Files/*
+chroma_db/
+.env
