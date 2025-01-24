@@ -68,13 +68,13 @@ for message in st.session_state.chat_history:
         st.markdown(message["message"])
 
 if uploaded_file is not None:
-    if not os.path.isfile("files/"+uploaded_file.name+".pdf"):
+    if not os.path.isfile("Files/"+uploaded_file.name+".pdf"):
         with st.status("Analyzing your document..."):
             bytes_data = uploaded_file.read()
-            f = open("files/"+uploaded_file.name+".pdf", "wb")
+            f = open("Files/"+uploaded_file.name+".pdf", "wb")
             f.write(bytes_data)
             f.close()
-            loader = PyPDFLoader("files/"+uploaded_file.name+".pdf")
+            loader = PyPDFLoader("Files/"+uploaded_file.name+".pdf")
             data = loader.load()
 
             # Initialize text splitter
